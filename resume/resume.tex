@@ -1,0 +1,170 @@
+\documentclass[letterpaper,10pt]{article}
+
+%Fonts
+\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+
+%A Few Useful Packages
+\usepackage{url,parskip}			%formatting
+
+%Graphics - Colors
+\RequirePackage{color,graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{fullpage}
+ 
+\usepackage{titlesec}			%custom section
+\usepackage{enumitem}
+%\setlist{nosep}
+
+\addtolength{\topmargin}{-0.15in}
+\addtolength{\textheight}{0.3in}
+ 
+%Setup hyperref package, and colours for links
+\usepackage{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks, urlcolor=linkcolour, linkcolor=linkcolour}
+
+
+%CV Sections inspired by:
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\large\bfseries\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{2.5pt}{2.5pt}
+
+\begin{document}
+\pagestyle{empty}
+
+% Title
+\par{\centering
+{\huge Tianqiang Liu }
+\bigskip\par}
+
+% Personal Data
+\section{Personal}
+\begin{tabular}{rl}
+\textsc{Address:} & 1600 Amphitheatre Pkwy, Mountain View, CA 94043.\\
+\textsc{Email:}	& \href{mailto:ltq@google.com}{ltq@google.com}\\
+\textsc{Phone:} & 609-937-3810
+\end{tabular}
+
+% Education
+\section{Education}
+\begin{tabular}{rl}
+\textsc{July} 2015
+  & Ph.D. in Computer Science, Princeton University.
+\vspace{0.05in}\\
+
+\textsc{June} 2012 
+  & Master of Arts in Computer Science, Princeton University.\\
+  & GPA: 4.0/4.0
+\vspace{0.05in}\\
+
+\textsc{July} 2010
+  & Bachelor in Computer Science, Tsinghua University, Beijing, China.\\
+  & GPA: 92.3/100, Rank: 3/137 \\
+\end{tabular}
+
+% Work Experiences 
+\section{Work and Research Experience}
+\textbf{Software Engineer at Google.}  \hfill Mountain View, CA\\
+Project: Street View data ingest. \hfill \textsc{Aug} 2015 - \textsc{Apr} 2018 \\
+Project: Street View camera pose estimation. \hfill \textsc{Apr} 2018 - \textsc{Now}
+\vspace{0.06in}
+
+\textbf{Intern at Adobe Research.}  \hfill San Francisco, CA\\
+Project: Style Compatibility For 3D Furniture Models.  \hfill \textsc{Jun} 2014 - \textsc{Sep} 2014
+\begin{itemize}
+    \item Developed an algorithm to learn a compatibility metric for 3D shape styles.
+    \item Designed novel interactive scene creation tools that are enabled by the compatibility metric.
+    \item Published in ACM Transactions on Graphics (Proc. SIGGRAPH 2015).
+\end{itemize}
+\vspace{0.06in}
+
+\textbf{Intern at Adobe Research.} \hfill Cambridge, MA\\
+Project: Composition-Aware Scene Optimization for Product Images. \hfill\textsc{Jun} 2012 - \textsc{Aug} 2012
+\begin{itemize}
+    \item Designed a tool that facilitates the creation of product images by automatically refining scene layouts.
+    \item Published in Computer Graphics Forum (Proc. Eurographics 2015).
+\end{itemize}
+\vspace{0.06in}
+
+\textbf{Research Assistant at Princeton University} \hfill Princeton, NJ\\
+Project: Creating Consistent Scene Graphs Using a Probabilistic Grammar. \hfill \textsc{Apr} 2013 - \textsc{Jun} 2014
+\begin{itemize}
+    \item Developed an algorithm that analyzes 3D scenes by parsing with a grammar learned from examples.
+    \item Our algorithm outperforms previous methods for automatic scene segmentation and annotation.
+    \item Published in ACM Transactions on Graphics (Proc. SIGGRAPH Asia 2014).
+\end{itemize}
+Project: Finding Surface Correspondences Using Symmetry Axis Curves. \hfill \textsc{Sep} 2010 - \textsc{Apr} 2012
+\begin{itemize}
+    \item Developed an algorithm that finds correspondences between 3D surfaces using symmetry.
+    \item Our algorithm outperforms previous methods in both efficiency and robustness.
+    \item Published in Computer Graphics Forum (Proc. Symposium on Geometry Processing 2012).
+\end{itemize}
+\vspace{0.06in}
+
+\textbf{Undergraduate Research Assistant at Tsinghua University} \hfill Beijing, China\\
+Project: Video Enhancement Using Fast Bilateral Filtering. \hfill  \textsc{Feb} 2010 - \textsc{May} 2010
+\begin{itemize}
+    \item Developed a method to improve both accuracy and speed for intra- and inter-frame video denoising.
+\end{itemize}
+Project: Efficient Affinity-based Edit Propagation Using K-D tree. \hfill  \textsc{Mar} 2009 - \textsc{Apr} 2009
+\begin{itemize}
+    \item Developed an algorithm that leverages K-D tree in high-dimensional affinity space for approximately solving the edit propagation problem.
+    %\item Published in ACM SIGGRAPH Asia 2009 as a co-author.
+\end{itemize}
+\vspace{0.06in}
+
+% Skills
+\section{Skills}
+\begin{itemize}
+    \item Computer vision, Computational geometry, Algorithm design.
+    \item C++, Java, Python.
+\end{itemize}
+
+% Publications
+\section{Publications}
+\begin{tabular}{ll}
+$[8]$ & \textbf{Style Compatibility For 3D Furniture Models}\\
+    & Tianqiang Liu, Aaron Hertzmann, Wilmot Li, Thomas Funkhouser \\
+    & ACM Transactions on Graphics (Proc. SIGGRAPH), 2015 \vspace{0.06in}\\
+$[7]$ & \textbf{Composition-Aware Scene Optimization for Product Images}\\
+    & Tianqiang Liu, Jim McCann, Wilmot Li, Thomas Funkhouser \\
+    & Computer Graphics Forum (Proc. Eurographics), 2015 \vspace{0.06in}\\
+$[6]$ & \textbf{Analyzing, Optimizing and Synthesizing Scenes by Reasoning About Relationships Between Objects}\\
+    & Tianqiang Liu \\
+    & PhD thesis, Princeton University, 2015 \vspace{0.06in}\\
+$[5]$ & \textbf{Creating Consistent Scene Graphs Using a Probabilistic Grammar}\\
+    & Tianqiang Liu, Siddhartha Chaudhuri, Vladimir Kim, Qi-Xing Huang, Niloy Mitra, Thomas Funkhouser\\
+    & ACM Transactions on Graphics (Proc. SIGGRAPH Asia), 2014 \vspace{0.06in}\\
+$[4]$ & \textbf{Composition-Aware Scene Optimization for Product Images}\\
+    & Tianqiang Liu, Jim McCann, Wilmot Li, Thomas Funkhouser \\
+    & Princeton University Technical Report, TR-970-14, 2014 \vspace{0.06in}\\
+$[3]$ & \textbf{Finding Surface Correspondences Using Symmetry Axis Curves}\\
+    & Tianqiang Liu, Vladimir Kim, Thomas Funkhouser\\
+    & Computer Graphics Forum (Proc. Eurographics Symposium on Geometry Processing), 2012  \vspace{0.06in}\\
+$[2]$ & \textbf{Video enhancement based on fast bilateral filtering}\\
+    & Tianqiang Liu \\
+    & Bachelor thesis, Tsinghua University, 2010 \vspace{0.06in}\\
+$[1]$ & \textbf{Efficient Affinity-based Edit Propagation Using K-D Tree}\\
+    & Kun Xu, Yong Li, Tao Ju, Shi-Min Hu, Tianqiang Liu\\
+    & ACM Transactions on Graphics (Proc. SIGGRAPH Asia), 2009 \vspace{0.06in}\\
+\end{tabular}
+
+
+% Service
+\section{Academic Services}
+\begin{tabular}{rl}
+Program Committee Member: & Pacific Graphics 2015, 2016\\
+Reviewer: & SIGGRAPH 2015, SIGGRAPH Asia 2015, SGP 2015, CAD/Graphics 2013,\\
+          & TVCG, Computer Graphics Forum, IJCV, Computers \& Graphics 
+\end{tabular}
+
+% Honors
+\section{Honors}
+\begin{tabular}{rl}
+2009 & First-Class National Scholarship of China. \\
+2008 & Goldman Sachs Global Leaders Scholarship (26 winners in China / 135 winners in the world). \\
+2007 & First-Class National Scholarship of China. \\
+2005 & Silver Medal in Chinese Physics Olympiad (29th overall).
+\end{tabular}
+
+\end{document}
